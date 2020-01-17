@@ -41,4 +41,33 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-/* here */ 
+// Create the nav bar links
+var a = document.createElement('a');
+a.setAttribute('href', '#');
+a.innerHTML = 'Services';
+document.getElementsByTagName('nav')[0].appendChild(a);
+
+var a = document.createElement('a');
+a.setAttribute('href', '#');
+a.innerHTML = 'Product';
+document.getElementsByTagName('nav')[0].appendChild(a);
+
+var a = document.createElement('a');
+a.setAttribute('href', '#');
+a.innerHTML = 'Vision';
+document.getElementsByTagName('nav')[0].appendChild(a);
+
+var a = document.createElement('a');
+a.setAttribute('href', '#');
+a.innerHTML = 'Features';
+document.getElementsByTagName('nav')[0].appendChild(a);
+
+var a = document.createElement('a');
+a.setAttribute('href', '#');
+a.innerHTML = 'About';
+document.getElementsByTagName('nav')[0].appendChild(a);
+
+var a = document.createElement('a');
+a.setAttribute('href', '#');
+a.innerHTML = 'Contact';
+document.getElementsByTagName('nav')[0].appendChild(a);
