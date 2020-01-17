@@ -81,6 +81,9 @@ document.getElementsByTagName('nav')[0].appendChild(a);
 let roundpic = document.getElementById("cta-img");
 roundpic.setAttribute('src', siteContent["cta"]["img-src"])
 
+// add the h1 title
+const title = document.querySelector('h1');
+title.textContent = "DOM IS AWESOME"
 
 
 
