@@ -71,3 +71,16 @@ var a = document.createElement('a');
 a.setAttribute('href', '#');
 a.innerHTML = 'Contact';
 document.getElementsByTagName('nav')[0].appendChild(a);
+
+// add proper spacing between the nav bar links
+// function changePadding() {
+//   document.getElementsByTagName(".nav.a").style.paddingright = "1000px";
+// }
+
+// add the round image
+let roundpic = document.getElementById("cta-img");
+roundpic.setAttribute('src', siteContent["cta"]["img-src"])
+
+
+
+
