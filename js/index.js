@@ -41,6 +41,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+/* Tasks 1 and 2 below */
+
 // Create the nav bar links
 const links = document.querySelectorAll("a");
 links[0].textContent = (siteContent["nav"]["nav-item-1"])
@@ -92,3 +94,23 @@ middleimg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 const footerend = document.querySelector("footer");
 footerend.textContent = (siteContent["footer"]["copyright"])
 
+/* Task 3 below */
+
+// change the color of the navigation text to green
+links.forEach(element => {
+  console.log('Nav Bar links', element)
+  element.style.color = 'green'
+})
+
+// add two new items to nav bar
+const newlink1 = document.createElement('a');
+newlink1.textContent = "Sign Up"
+newlink1.style.color = 'green'
+
+const newlink2 = document.createElement('a');
+newlink2.textContent = "Login"
+newlink2.style.color = 'green'
+
+const parentElement = document.querySelector('nav');
+console.log('parent', parentElement)
+parentElement.append(newlink1, newlink2)
