@@ -85,5 +85,7 @@ roundpic.setAttribute('src', siteContent["cta"]["img-src"])
 const title = document.querySelector('h1');
 title.textContent = "DOM IS AWESOME"
 
+// add the button text
+
 
 
