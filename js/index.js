@@ -78,11 +78,28 @@ roundpic.setAttribute('src', siteContent["cta"]["img-src"])
 
 // add the h1 title
 const title = document.querySelector('h1');
-title.textContent = "DOM IS AWESOME"
+title.textContent = (siteContent["cta"]["h1"])
 
 // add the button text
-const btntitle = document.querySelector('button');
-btntitle.textContent = "Get Started"
+let btntitle = document.querySelector('button');
+btntitle.textContent = (siteContent["cta"]["button"])
 
-// add the top-content h4 and p
+// add the main-content h4s
+const maincontentH4 = document.querySelectorAll("h4");
+maincontentH4[0].textContent = (siteContent["main-content"]["features-h4"])
+maincontentH4[1].textContent = (siteContent["main-content"]["about-h4"])
+maincontentH4[2].textContent = (siteContent["main-content"]["services-h4"])
+maincontentH4[3].textContent = (siteContent["main-content"]["product-h4"])
+maincontentH4[4].textContent = (siteContent["main-content"]["vision-h4"])
 
+// add the middle image
+let middleimg = document.getElementById("middle-img");
+middleimg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+// add the contact h4
+const contactH4 = document.querySelector(".contact h4");
+contactH4.textContent = (siteContent["contact"]["contact-h4"])
+
+
+// add the footer
+let footer = document.querySelector("footer");
