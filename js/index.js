@@ -87,5 +87,6 @@ title.textContent = "DOM IS AWESOME"
 
 // add the button text
 
-
+const btntitle = document.querySelector('button');
+btntitle.textContent = "Get Started"
 
