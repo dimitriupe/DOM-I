@@ -62,13 +62,15 @@ title.textContent = (siteContent["cta"]["h1"])
 let btntitle = document.querySelector('button');
 btntitle.textContent = (siteContent["cta"]["button"])
 
-// add the main-content h4s
+// add the h4s
 const maincontentH4 = document.querySelectorAll("h4");
 maincontentH4[0].textContent = (siteContent["main-content"]["features-h4"])
 maincontentH4[1].textContent = (siteContent["main-content"]["about-h4"])
 maincontentH4[2].textContent = (siteContent["main-content"]["services-h4"])
 maincontentH4[3].textContent = (siteContent["main-content"]["product-h4"])
 maincontentH4[4].textContent = (siteContent["main-content"]["vision-h4"])
+
+maincontentH4[5].textContent = (siteContent["contact"]["contact-h4"])
 
 // add the main-content Ps
 const maincontentP = document.querySelectorAll("p");
@@ -78,14 +80,15 @@ maincontentP[2].textContent = (siteContent["main-content"]["services-content"])
 maincontentP[3].textContent = (siteContent["main-content"]["product-content"])
 maincontentP[4].textContent = (siteContent["main-content"]["vision-content"])
 
+maincontentP[5].textContent = (siteContent["contact"]["address"])
+maincontentP[6].textContent = (siteContent["contact"]["phone"])
+maincontentP[7].textContent = (siteContent["contact"]["email"])
+
 // add the middle image
 let middleimg = document.getElementById("middle-img");
 middleimg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
-// add the contact h4
-const contactH4 = document.getElementsByTagName("h4");
-contactH4.textContent = (siteContent["contact"]["contact-h4"])
-
-
 // add the footer
-let footer = document.querySelector("footer");
+const footerend = document.querySelector("footer");
+footerend.textContent = (siteContent["footer"]["copyright"])
+
