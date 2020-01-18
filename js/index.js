@@ -42,35 +42,13 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Create the nav bar links
-var a = document.createElement('a');
-a.setAttribute('href', '#');
-a.innerHTML = 'Services';
-document.getElementsByTagName('nav')[0].appendChild(a);
-
-var a = document.createElement('a');
-a.setAttribute('href', '#');
-a.innerHTML = 'Product';
-document.getElementsByTagName('nav')[0].appendChild(a);
-
-var a = document.createElement('a');
-a.setAttribute('href', '#');
-a.innerHTML = 'Vision';
-document.getElementsByTagName('nav')[0].appendChild(a);
-
-var a = document.createElement('a');
-a.setAttribute('href', '#');
-a.innerHTML = 'Features';
-document.getElementsByTagName('nav')[0].appendChild(a);
-
-var a = document.createElement('a');
-a.setAttribute('href', '#');
-a.innerHTML = 'About';
-document.getElementsByTagName('nav')[0].appendChild(a);
-
-var a = document.createElement('a');
-a.setAttribute('href', '#');
-a.innerHTML = 'Contact';
-document.getElementsByTagName('nav')[0].appendChild(a);
+const links = document.querySelectorAll("a");
+links[0].textContent = (siteContent["nav"]["nav-item-1"])
+links[1].textContent = (siteContent["nav"]["nav-item-2"])
+links[2].textContent = (siteContent["nav"]["nav-item-3"])
+links[3].textContent = (siteContent["nav"]["nav-item-4"])
+links[4].textContent = (siteContent["nav"]["nav-item-5"])
+links[5].textContent = (siteContent["nav"]["nav-item-6"])
 
 // add the round image
 let roundpic = document.getElementById("cta-img");
@@ -92,12 +70,20 @@ maincontentH4[2].textContent = (siteContent["main-content"]["services-h4"])
 maincontentH4[3].textContent = (siteContent["main-content"]["product-h4"])
 maincontentH4[4].textContent = (siteContent["main-content"]["vision-h4"])
 
+// add the main-content Ps
+const maincontentP = document.querySelectorAll("p");
+maincontentP[0].textContent = (siteContent["main-content"]["features-content"])
+maincontentP[1].textContent = (siteContent["main-content"]["about-content"])
+maincontentP[2].textContent = (siteContent["main-content"]["services-content"])
+maincontentP[3].textContent = (siteContent["main-content"]["product-content"])
+maincontentP[4].textContent = (siteContent["main-content"]["vision-content"])
+
 // add the middle image
 let middleimg = document.getElementById("middle-img");
 middleimg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 // add the contact h4
-const contactH4 = document.querySelector(".contact h4");
+const contactH4 = document.getElementsByTagName("h4");
 contactH4.textContent = (siteContent["contact"]["contact-h4"])
 
 
