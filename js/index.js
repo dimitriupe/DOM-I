@@ -113,4 +113,5 @@ newlink2.style.color = 'green'
 
 const parentElement = document.querySelector('nav');
 console.log('parent', parentElement)
-parentElement.prepend(newlink1, newlink2)
+parentElement.appendChild(newlink1)
+parentElement.prepend(newlink2)
